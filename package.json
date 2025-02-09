@@ -1,6 +1,7 @@
 {
   "name": "@whattheearl/chess",
-  "version": "1.0.50",
+  "version": "1.0.53",
+  "main": "./src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.ts"
@@ -13,5 +14,5 @@
   "devDependencies": {
     "bun-types": "latest"
   },
-  "module": "src/index.js"
+  "module": "src/index.ts"
 }
