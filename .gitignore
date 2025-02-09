@@ -1,4 +1,4 @@
-/data
+/data/db.sqlite
 
 # dependencies
 /node_modules
