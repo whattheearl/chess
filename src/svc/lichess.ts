@@ -25,6 +25,9 @@ export async function getLichessAcount() {
     console.info("retrieving lichess data");
     try {
         const LICHESS_API_KEY = process.env.LICHESS_API_KEY;
+        if (!LICHESS_API_KEY) {
+            return { error: "LICHESS_API_KEY required." };
+        }
 
         const res = await fetch("https://lichess.org/api/account", {
             headers: { Authorization: `Bearer ${LICHESS_API_KEY}` },
